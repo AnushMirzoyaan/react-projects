@@ -22,12 +22,6 @@ function App() {
     )
 
 
-    //THIS WAS NOT WORKING FOR FORECAST
-    // fetch(`${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}$units=metric`);
-
-
-
-
     Promise.all([currentWeatherFetch, forecastFetch])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
@@ -39,10 +33,6 @@ function App() {
       .catch((err) => console.log(err))
 
   };
-
-
-  // console.log(currentWeather);
-  console.log("forecast", forecast, "_______")
 
   return (
     <div className='container'>
