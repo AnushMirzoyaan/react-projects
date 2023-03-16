@@ -1,0 +1,38 @@
+.App {
+  min-height: 100vh;
+}
+
+.search-form{
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #032541; */
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  border: .5px solid #032541;
+border-radius: 5px 0 0 5px
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-button {
+  background-color: #032541;
+  border: .5px solid #032541;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  color: whitesmoke;
+}
+
+.movieContainer {
+  min-height: 100vh;
+  background-color: #032541;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
