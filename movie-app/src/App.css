@@ -2,19 +2,19 @@
   min-height: 100vh;
 }
 
-.search-form{
+.search-form {
   min-height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #032541; */
+  background-color: whitesmoke;
 }
 
 .search-bar {
   width: 50%;
   padding: 10px;
   border: .5px solid #032541;
-border-radius: 5px 0 0 5px
+  border-radius: 5px 0 0 5px
 }
 
 .search-bar:focus {
@@ -30,9 +30,7 @@ border-radius: 5px 0 0 5px
 }
 
 .movieContainer {
-  min-height: 100vh;
   background-color: #032541;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
 }
